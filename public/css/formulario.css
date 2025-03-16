@@ -1,0 +1,124 @@
+* {
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+.seccion {
+    display: none; 
+}
+
+.seccion:not(.oculto) {
+    display: block;
+}
+
+select:invalid {
+    color: gray;
+}
+
+.titulo-container {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+
+#inicio, #confirmacion {
+    text-align: center;
+    font-size: large;
+    font-weight: bolder;
+}
+
+#formulario{
+    font-size: large;
+    font-weight: bolder;
+}
+
+#form-reserva {
+    max-width: 500px;
+    margin: auto;
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#form-reserva label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#form-reserva input,
+#form-reserva select,
+#form-reserva textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box; 
+}
+
+#form-reserva select:focus,
+#form-reserva textarea:focus {
+    border-color: #004d40;
+    outline: none;
+}
+
+
+#btn-iniciar, #btn-reservar, #btn-menu {
+    background-color: #004d40 !important;
+    color: white;
+    border: none !important;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px; 
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#btn-iniciar:hover, #btn-reservar:hover, #btn-menu:hover {
+    background-color: #0127a1 !important;
+    color: white;
+}
+
+#btn-iniciar:focus, #btn-reservar:focus, #btn-menu:focus {
+    outline: none;
+}
+
+#form-reserva textarea {
+    height: 80px;
+    resize: none;
+}
+
+#btn-disabled {
+    background-color: #ccc !important;
+    color: #888 !important;
+    border: none !important;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px; 
+    cursor: not-allowed !important;
+}
+
+.obligatorio{
+    color: red;
+
+}
+
+.placeholder{
+    font-style: italic;
+    color:#888;
+}
+
+#codigo-reserva{
+    font-size: larger;
+    color: #c9610c;
+}

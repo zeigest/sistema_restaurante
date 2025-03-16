@@ -1,0 +1,31 @@
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #004d40;
+    padding: 20px;
+    color: white;
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.banner-texto {
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.banner-texto h1 {
+    font-size: 24px;
+    margin: 0;
+    font-style: italic;
+}
+
+.banner-texto h2 {
+    font-size: 36px;
+    margin: 5px 0 0;
+    font-weight: bold;
+}

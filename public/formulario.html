@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de reservación</title>
+    <link rel="stylesheet" href="css/banner_elsazon.css">
+    <link rel="stylesheet" href="css/formulario.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <link rel="icon" type="image/png" href="imagenes/logo/logo_abuela.png"/>
+</head>
+<body>    
+    <header>
+        <div id="banner-container"></div>
+    </header>
+
+    <main>
+        <div id="contenido">
+            <section id="inicio" class="seccion">
+                <p>Reserva tu mesa en segundos y sin complicaciones.<br> 
+                   Elige el día, la hora y confirma en un clic.</p>
+                <button id="btn-iniciar">Iniciar</button> 
+            </section>
+
+            <section id="formulario" class="seccion oculto">
+                <div class="titulo-container">
+                    <h2 class="titulo">Reserva tu mesa</h2>
+                </div>
+                <form id="form-reserva">
+                    <label for="fecha">Fecha de reservación:<span class="obligatorio">*</span></label>
+                    <input type="date" id="fecha" required>
+
+                    <label for="hora">Hora de reservación:<span class="obligatorio">*</span></label>
+                    <select id="hora" required></select> 
+
+                    <label for="personas">Número de personas:<span class="obligatorio">*</span></label>
+                    <select id="personas" required>
+                        <option class="placeholder" value="" disabled selected>Indica cuántas personas asistirán</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+
+                    <label for="nombre">Nombre del cliente: <span class="obligatorio">*</span> </label>
+                    <input type="text" id="nombre" required class="placeholder" placeholder="A nombre de quién estará la reservación.">
+
+                    <label for="email">Correo electrónico: <span class="obligatorio">*</span></label>
+                    <input type="email" id="email" required class="placeholder" placeholder="A qué correo podemos contactarte.">
+
+                    <label for="telefono">¿En qué teléfono podemos encontrarte? <span class="obligatorio">*</span></label>
+                    <input type="tel" id="telefono" required class="placeholder" placeholder="A qué teléfono podemos contactarte.">
+
+                    <label for="notas">Notas adicionales: </label>
+                    <textarea id="notas" class="placeholder" placeholder="Indica si tienes alguna alergia, necesitas asiento para niños o algún requerimiento especial"></textarea>
+
+                    <button id="btn-reservar" type="button">Reservar ahora</button>
+                </form>
+            </section>
+
+            <section id="confirmacion" class="seccion oculto">
+                <h2>¡Tu reservación ha sido agendada!</h2>
+                <p>Tu código de reservación es: <strong id="codigo-reserva">Cargando...</strong></p>
+                <button id="btn-menu" onclick="window.location.href='menu.html'">Explora nuestro menú </button>
+            </section>
+        </div>
+    </main>
+
+    <script src="js/banner.js"></script>
+    <script src="js/navegacion_formulario.js"></script>
+    <script src="js/reservaciones.js"></script> 
+    <script src="js/validaciones.js"></script>
+</body>
+</html>
